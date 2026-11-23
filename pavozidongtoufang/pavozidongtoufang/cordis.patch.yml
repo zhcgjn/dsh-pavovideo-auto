@@ -1,0 +1,27 @@
+# dsh-pavo-auto bundle patch.
+#
+# 1) Two shipped DSH rows provide the action-card service used by the
+#    「紧急终止 / 继续」 card. They are not enabled by default in every profile.
+# 2) The plugin row itself. Override `config` by row id `pavo-auto` in your
+#    own profile cordis.patch.yml if you need other paths or limits.
+- insert:
+    - id: action-cards
+      name: '@deepseek-ai/dsh-action-cards'
+    - id: client-ui-action-cards
+      name: '@deepseek-ai/dsh-client-ui-action-cards'
+    - id: pavo-auto
+      name: 'dsh-pavo-auto'
+      config:
+        url: https://app.pavo-ai.cn/chat
+        dataDir: ''
+        promptFile: ''
+        segmentsFile: ''
+        clipsDir: ''
+        framesDir: ''
+        ffmpegPath: ffmpeg
+        intervalMs: 120000
+        minGapMs: 90000
+        dailyLimit: 30
+        template: '{{prompt}}'
+        headless: false
+        notify: true

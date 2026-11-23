@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Pavo auto submit",
+    "description": "Sends prompts from a local list to the Pavo AI video site, posts one notice per completed round, and offers emergency stop and resume card buttons; every send is recorded locally.",
+    "detail": "docs/DETAIL.md"
+  }
+}
