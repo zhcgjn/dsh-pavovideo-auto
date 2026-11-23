@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Pavo 自动投放",
+    "description": "在 Pavo AI 视频站上按提示词清单自动连续发送，每轮完成后发一条提示，并提供「紧急终止」「继续」卡片按钮；发送记录写入本地文件。",
+    "detail": "docs/DETAIL.md"
+  }
+}

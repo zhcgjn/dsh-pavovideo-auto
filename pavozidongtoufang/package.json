@@ -1,0 +1,47 @@
+{
+  "name": "dsh-pavo-auto",
+  "version": "0.2.0",
+  "description": "Automate Pavo AI video generation inside DeepSeek Harness: persistent logged-in browser, queue-driven prompt submission, first-frame chaining, clip download and last-frame extraction.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "pavo",
+    "pavo-ai",
+    "video-generation",
+    "browser-automation",
+    "playwright",
+    "first-frame",
+    "storyboard"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "dependencies": {
+    "playwright-core": "^1.49.0"
+  }
+}
